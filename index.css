@@ -164,7 +164,7 @@ nav{
   }
   body{
     background: rgb(71,75,85);
-  background: linear-gradient(90deg, rgba(71,75,85,1) 0%, rgba(118,117,128,1) 35%, rgba(118,117,128,1) 100%);
+    background: linear-gradient(90deg, rgba(71,75,85,1) 0%, rgba(118,117,128,1) 35%, rgba(118,117,128,1) 100%);
   }
   .services{
     text-align: center;
@@ -218,10 +218,11 @@ nav{
     padding-left: 10%;
     padding-right: 10%;
     display: flex;
+    align-items: center;
   }
 
   .language{
-    width: 25%;
+    width: 35%;
     padding: 10px;
     margin:10px;
     display: flex;
@@ -237,4 +238,59 @@ nav{
   .mainLanguage-text{
     color: #CAB07F;
     padding-top: 10%;
+    font-size: 34px;
+    width: 210%;
+    padding-left:35%;
+  }
+
+  .language-text{
+    padding-top: 20%;
+    font-size: 25px;
+  }
+  span{
+    color: white;
+  }
+
+  .lang-img{
+    padding-left: 20%;
+  }
+
+  .programs-container{
+    width: 100%;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    align-items: center;
+  }
+
+  .program{
+    width: 35%;
+    padding: 10px;
+    margin:10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .aboutUs{
+    background-image: url('Images/Frame\ 486.png');
+    height: 160vh;
+  }
+  .about-heading{
+    color: white;
+    text-align: center;
+    padding-top: 15%;
+    padding-left: 7%;
+  }
+  .about-p{
+    color: white;
+    text-align: justify;
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: x-large;
+    font-family: sans-serif;
+    padding-top: 80px;
+    line-height: 1.5;
   }
