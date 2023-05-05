@@ -128,7 +128,7 @@ nav{
 } */
 
 header{
-  background-image: url('Images/homePage.png');
+  background-image: url('../resources/images/homePage.png');
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -281,7 +281,7 @@ span{
 }
 
 .aboutUs{
-  background-image: url('Images/Frame\ 486.png');
+  background-image: url('../resources/images/Frame 486.png');
   height: 160vh;
 }
 .about-heading{
