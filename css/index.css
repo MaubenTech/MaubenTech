@@ -160,7 +160,7 @@ header *:not(.overlay):not(#nav){
 
 #welcome-text{
   font-size: 50px;
-  color: #CAB07F;
+  color: #D0B07F;
 }
 
 .sub-text{
@@ -204,7 +204,7 @@ body{
   display: flex;
   align-items: center;
   flex-direction: column;
-  border: #CAB07F solid;
+  border: #D0B07F solid;
   border-radius: 25px;
   padding-top: 8%;
 } 
@@ -243,7 +243,7 @@ body{
 }
 
 .mainLanguage-text{
-  color: #CAB07F;
+  color: #D0B07F;
   padding-top: 10%;
   font-size: 34px;
   width: 210%;
@@ -295,7 +295,7 @@ span{
   height: 100%;
 }
 .about-heading{
-  color:#CAB07F;
+  color:#D0B07F;
   text-align: center;
   padding-top: 15%;
   padding-left:1%;
@@ -311,3 +311,80 @@ span{
   padding-top: 80px;
   line-height: 1.5;
 }
+
+.letsTalk{
+  background: rgb(72,76,86);
+  background: linear-gradient(90deg, rgba(72,76,86,1) 0%, rgba(72,76,86,1) 35%, rgba(108,108,118,1) 100%);
+}
+
+.Lets-Talk{ 
+  display: flex;
+}
+
+.talk{
+  width: 50%;
+  padding: 10px;
+  margin:10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Talk{
+  color:#D0B07F;
+  font-family: sans-serif;
+  font-size: xx-large;
+  padding-top: 20%;
+  padding-left: 20%;
+}
+
+.lets{
+  font-family: sans-serif;
+  padding-top: 3%;
+  font-size: xx-large;
+  padding-left: 20%;
+  color: white;
+}
+.lets-talk-button{
+  display: grid;
+  place-items: center;
+  padding-bottom: 10%;
+}
+
+.button{
+  align-items: center;
+  padding: 20px;
+  color: black;
+  border-radius: 1px solid ;
+  font-family: sans-serif;
+  font-size: x-large;
+  border: #D0B07F solid;
+  color: gray;
+ 
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: rgb(72,76,86);
+  background: linear-gradient(90deg, rgba(72,76,86,1) 0%, rgba(72,76,86,1) 35%, rgba(108,108,118,1) 100%);
+  width: 100%;
+}
+
+
+.footer-links{
+  padding-right: 5%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-left: 20%;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.footer-links a{
+  text-decoration: none;
+  color:#D0B07F;
+}
+
