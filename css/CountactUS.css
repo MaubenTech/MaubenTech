@@ -145,6 +145,10 @@ nav{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: #D0B07F;
+}
+span{
+  color: white;
 }
 
 .locate-section h4{
@@ -153,7 +157,13 @@ nav{
 
 #map{
   width: calc(100% - 23%);
+  transition: transform .2s;
   
+}
+
+#map:hover{
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .contact-info{
@@ -243,3 +253,29 @@ nav{
   font-weight: 800;
   letter-spacing: 1.5px;
 }
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: rgb(72,76,86);
+  background: linear-gradient(90deg, rgba(72,76,86,1) 0%, rgba(72,76,86,1) 35%, rgba(108,108,118,1) 100%);
+  width: 100%;
+}
+
+
+.footer-links{
+  padding-right: 5%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-left: 20%;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.footer-links a{
+  text-decoration: none;
+  color:#D0B07F;
+}
+
