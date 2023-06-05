@@ -2,22 +2,23 @@
   --font-family: sans-serif;
 }
 
-*{
+* {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 body {
   font-family: var(--font-family);
 }
 
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 15vh;
-  background-color: transparent ;
+  /* height: 10vh; */
+  height: 60px;
+  background-color: transparent;
   position: fixed;
   z-index: 100;
   width: 100%;
@@ -25,19 +26,19 @@ nav{
   padding-left: 40px;
   padding-bottom: 20px;
   padding-right: 50px;
-}   
+}
 
-.nav-links{
+.nav-links {
   display: flex;
   justify-content: space-around;
   width: 30%;
 }
 
-.nav-links li{
+.nav-links li {
   list-style: none;
 }
- 
-.nav-links a{
+
+.nav-links a {
   color: white;
   text-decoration: none;
   letter-spacing: 3px;
@@ -45,40 +46,52 @@ nav{
   font-size: 14px;
 }
 
-.logo{
-  width: 10%;
-  height: 300px;
+.logo {
+  display: flex;
+  width: 50%;
+  /* height: 100%; */
+  align-self: center;
 }
 
-#logo{
+#logo-img {
+  margin-top: -10px;
+  width: 50px;
+  /* height: 50px; */
+}
+
+#logo {
   width: 100%;
-  object-fit: contain;
-  height: 100%;
 }
 
-.burger{
+.logo h1 {
+  color: #FFF;
+  margin-left: 100px;
+}
+
+.burger {
   display: none;
   cursor: pointer;
 }
 
-.burger div{
+.burger div {
   width: 25px;
   height: 3px;
   background-color: white;
-  margin: 5px; 
+  margin: 5px;
 }
 
-@media screen and (max-width:1024px){
-  .nav-links{
+@media screen and (max-width:1024px) {
+  .nav-links {
     width: 68%;
   }
 }
 
 @media screen and (max-width:768px) {
-  body{
+  body {
     overflow-x: hidden;
   }
-  .nav-links{
+
+  .nav-links {
     position: absolute;
     right: 0px;
     height: 92vh;
@@ -92,24 +105,26 @@ nav{
     transition: transform 1s ease-in;
   }
 
-  .nav-links li{
+  .nav-links li {
     opacity: 0;
   }
-  .burger{
+
+  .burger {
     display: block;
   }
 }
 
-.nav-active{
+.nav-active {
   transform: translateX(0%);
 }
 
-@keyframes navLinkFade{
-  from{
+@keyframes navLinkFade {
+  from {
     opacity: 0;
     transform: translateX(50px);
   }
-  to{
+
+  to {
     opacity: 1;
     transform: translateX(0px);
   }
@@ -127,7 +142,7 @@ nav{
   transform: rotate(45deg) translate(-5px,-6px);
 } */
 
-header{
+header {
   background-image: url('../resources/images/homePage.png');
   height: 100vh;
   background-repeat: no-repeat;
@@ -136,54 +151,54 @@ header{
   /* z-index: ; */
 }
 
-header *:not(.overlay):not(#nav){
+header *:not(.overlay):not(#nav) {
   z-index: 10;
   position: relative;
 
 }
 
-.overlay{
+.overlay {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: rgb(102,102,113);
-  background: linear-gradient(90deg, rgba(102,102,113,1) 0%, rgba(93,94,105,1) 35%, rgba(132,131,139,1) 100%);
+  background: rgb(102, 102, 113);
+  background: linear-gradient(90deg, rgba(102, 102, 113, 1) 0%, rgba(93, 94, 105, 1) 35%, rgba(132, 131, 139, 1) 100%);
   opacity: .6;
   z-index: 1;
 }
 
-.intro-text{
+.intro-text {
   text-align: center;
   justify-self: center;
   padding-top: 20%;
 }
 
-#welcome-text{
+#welcome-text {
   font-size: 50px;
   color: #D0B07F;
 }
 
-.sub-text{
+.sub-text {
   font-size: 30px;
   color: white;
 }
 
-body{
-  background: rgb(71,75,85);
-  background: linear-gradient(90deg, rgba(71,75,85,1) 0%, rgba(118,117,128,1) 35%, rgba(118,117,128,1) 100%);
+body {
+  background: rgb(71, 75, 85);
+  background: linear-gradient(90deg, rgba(71, 75, 85, 1) 0%, rgba(118, 117, 128, 1) 35%, rgba(118, 117, 128, 1) 100%);
 }
 
-.services{
+.services {
   text-align: center;
 }
 
-#service-bio{
+#service-bio {
   text-align: center;
   font-size: 25px;
   color: #D0B07F;
 }
 
-#service{
+#service {
   font-size: 30px;
   padding-top: 3%;
   padding-bottom: 1%;
@@ -207,19 +222,19 @@ body{
   border: #D0B07F solid;
   border-radius: 25px;
   padding-top: 8%;
-} 
+}
 
-.card-text{
+.card-text {
   text-align: center;
   color: aliceblue;
 }
 
-#text{
+#text {
   padding-top: 10%;
   padding-bottom: 15%;
 }
 
-.language-container{
+.language-container {
   width: 100%;
   padding-top: 10%;
   padding-left: 10%;
@@ -228,41 +243,42 @@ body{
   align-items: center;
 }
 
-.language{
+.language {
   width: 35%;
   padding: 10px;
-  margin:10px;
+  margin: 10px;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.language-text{
+.language-text {
   color: white;
   padding-top: 2%;
 }
 
-.mainLanguage-text{
+.mainLanguage-text {
   color: #D0B07F;
   padding-top: 10%;
   font-size: 34px;
   width: 210%;
-  padding-left:35%;
+  padding-left: 35%;
 }
 
-.language-text{
+.language-text {
   padding-top: 20%;
   font-size: 25px;
 }
-span{
+
+span {
   color: white;
 }
 
-.lang-img{
+.lang-img {
   padding-left: 20%;
 }
 
-.programs-container{
+.programs-container {
   width: 100%;
   padding-top: 5%;
   padding-left: 10%;
@@ -271,16 +287,16 @@ span{
   align-items: center;
 }
 
-.program{
+.program {
   width: 35%;
   padding: 10px;
-  margin:10px;
+  margin: 10px;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.aboutUs{
+.aboutUs {
   background-image: url('../resources/images/Frame 486.png');
   height: 120vh;
   background-size: cover;
@@ -288,19 +304,21 @@ span{
   position: relative;
 }
 
-.aboutUs .overlay{
-  background: #000; 
+.aboutUs .overlay {
+  background: #000;
   z-index: 1;
   position: absolute;
   height: 100%;
 }
-.about-heading{
-  color:#D0B07F;
+
+.about-heading {
+  color: #D0B07F;
   text-align: center;
   padding-top: 15%;
-  padding-left:1%;
+  padding-left: 1%;
 }
-.about-p{
+
+.about-p {
   color: white;
   text-align: justify;
   width: 800px;
@@ -312,68 +330,69 @@ span{
   line-height: 1.5;
 }
 
-.letsTalk{
-  background: rgb(72,76,86);
-  background: linear-gradient(90deg, rgba(72,76,86,1) 0%, rgba(72,76,86,1) 35%, rgba(108,108,118,1) 100%);
+.letsTalk {
+  background: rgb(72, 76, 86);
+  background: linear-gradient(90deg, rgba(72, 76, 86, 1) 0%, rgba(72, 76, 86, 1) 35%, rgba(108, 108, 118, 1) 100%);
 }
 
-.Lets-Talk{ 
+.Lets-Talk {
   display: flex;
 }
 
-.talk{
+.talk {
   width: 50%;
   padding: 10px;
-  margin:10px;
+  margin: 10px;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.Talk{
-  color:#D0B07F;
+.Talk {
+  color: #D0B07F;
   font-family: sans-serif;
   font-size: xx-large;
   padding-top: 20%;
   padding-left: 20%;
 }
 
-.lets{
+.lets {
   font-family: sans-serif;
   padding-top: 3%;
   font-size: xx-large;
   padding-left: 20%;
   color: white;
 }
-.lets-talk-button{
+
+.lets-talk-button {
   display: grid;
   place-items: center;
   padding-bottom: 10%;
 }
 
-.button{
+.button {
   align-items: center;
   padding: 20px;
   color: black;
-  border-radius: 1px solid ;
+  border-radius: 1px solid;
   font-family: sans-serif;
   font-size: x-large;
   border: #D0B07F solid;
   color: gray;
- 
+
 }
 
-.footer{
+.footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background: rgb(72,76,86);
-  background: linear-gradient(90deg, rgba(72,76,86,1) 0%, rgba(72,76,86,1) 35%, rgba(108,108,118,1) 100%);
+  background: rgb(72, 76, 86);
+  background: linear-gradient(90deg, rgba(72, 76, 86, 1) 0%, rgba(72, 76, 86, 1) 35%, rgba(108, 108, 118, 1) 100%);
   width: 100%;
 }
 
 
-.footer-links{
+.footer-links {
   padding-right: 5%;
   justify-content: center;
   display: flex;
@@ -383,8 +402,7 @@ span{
   width: 20%;
 }
 
-.footer-links a{
+.footer-links a {
   text-decoration: none;
-  color:#D0B07F;
+  color: #D0B07F;
 }
-
