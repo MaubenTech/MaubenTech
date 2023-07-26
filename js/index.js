@@ -40,7 +40,7 @@ document.onscroll = () => {
 var cards = document.getElementsByClassName("card");
 var cardArray = Array.from(cards);
 
-const btn = document.getElementById("btn");
+const btn = document.getElementsByClassName("btn")[0];
 console.log(btn);
 
 btn.addEventListener("click", (event) => {
@@ -85,8 +85,8 @@ cardArray.forEach((card) => {
   card.onmouseover = () => {
     card.children[1].children[1].children[1].style.padding = "0 15%";
     // card.children[1].children[1].children[1].style.padding = "0 5%";
-  }
+  };
   card.onmouseleave = () => {
     card.children[1].children[1].children[1].style.padding = "0 10%";
-  }
-})
+  };
+});
