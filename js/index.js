@@ -43,50 +43,38 @@ var cardArray = Array.from(cards);
 const btn = document.getElementsByClassName("btn")[0];
 console.log(btn);
 
-btn.addEventListener("click", (event) => {
-  const form = document.getElementById("service-form");
-  console.log(form);
+btn.addEventListener("click", (event) => {});
 
-  console.log(event.currentTarget.parentElement.parentElement);
-  var clickedCard = event.currentTarget.parentElement.parentElement;
-  clickedCard.classList.add("clicked-card");
-  if (clickedCard.classList.contains("clicked-card")) {
-    clickedCard.style.width = "100%";
-    clickedCard.style.position = "absolute";
-    clickedCard.style.top = "0";
-    clickedCard.style.zIndex = "1000";
-    clickedCard.style.transition = "all 0.5s ease-in-out";
+cardArray.forEach((card) => {
+  const mouseover = () => {
+    card.children[1].children[1].children[1].style.padding = "0 15%";
+    // card.children[1].children[1].children[1].style.padding = "0 5%";
+  };
+  const mouseleave = () => {
+    card.children[1].children[1].children[1].style.padding = "0 10%";
+  };
+  if (!card.classList.contains("clicked-card")) {
+    card.addEventListener("mouseover", mouseover);
+    card.addEventListener("mouseleave", mouseleave);
+  }
 
-    clickedCard.style.display = "flex";
-    clickedCard.style.flexDirection = "row";
-    clickedCard.style.justifyContent = "space-between";
-    form.style.display = "flex";
-    form.style.width = "60%";
+  card.addEventListener("click", (event) => {
+    card.removeEventListener("mouseover", mouseover);
+    card.removeEventListener("mouseleave", mouseleave);
+
+    const form = event.currentTarget.children[2];
+    console.log(form);
+
+    var clickedCard = event.currentTarget;
+    clickedCard.classList.add("clicked-card");
+
+    form.classList.add("active");
     form.previousElementSibling.style.width = "40%";
 
     cardArray.forEach((card) => {
       if (!card.classList.contains("clicked-card")) {
-        // card.style.position = "absolute";
-        card.style.top = "0";
-        card.style.zIndex = "1";
-        card.style.opacity = "0";
+        card.style.display = "none";
       }
     });
-  }
-});
-
-// card.classList.add('clicked-card');
-// if (card.classList.contains("clicked-card")) {
-
-//
-// }
-
-cardArray.forEach((card) => {
-  card.onmouseover = () => {
-    card.children[1].children[1].children[1].style.padding = "0 15%";
-    // card.children[1].children[1].children[1].style.padding = "0 5%";
-  };
-  card.onmouseleave = () => {
-    card.children[1].children[1].children[1].style.padding = "0 10%";
-  };
+  });
 });
