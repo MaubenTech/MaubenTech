@@ -419,6 +419,18 @@ body {
   color: #fff;
 }
 
+.service-form button {
+  align-self: flex-end;
+  margin-right: 20%;
+  background-color: #cab07f;
+  border: none;
+  color: #484b55;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
 .language-container {
   width: 100%;
   padding-top: 3%;
