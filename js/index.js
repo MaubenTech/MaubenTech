@@ -75,5 +75,12 @@ cardArray.forEach((card) => {
         card.style.display = "none";
       }
     });
+
+    card.children[0].children[0].children[0].classList.remove(
+      "fa-circle-chevron-right"
+    );
+    card.children[0].children[0].children[0].classList.add(
+      "fa-circle-chevron-left"
+    );
   });
 });
