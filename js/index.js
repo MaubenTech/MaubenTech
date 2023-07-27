@@ -76,11 +76,13 @@ cardArray.forEach((card) => {
       }
     });
 
-    card.children[0].children[0].children[0].classList.remove(
-      "fa-circle-chevron-right"
-    );
-    card.children[0].children[0].children[0].classList.add(
-      "fa-circle-chevron-left"
-    );
+    const i = card.children[0].children[0].children[0];
+    i.classList.remove("fa-circle-chevron-right");
+    i.classList.add("fa-circle-chevron-left");
+
+    const btn = card.children[0];
+    if (card.classList.contains("clicked-card")) {
+      btn.addEventListener("click", () => {});
+    }
   });
 });
