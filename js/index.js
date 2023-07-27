@@ -69,7 +69,6 @@ cardArray.forEach((card) => {
     clickedCard.classList.add("clicked-card");
 
     form.classList.add("active");
-    form.previousElementSibling.style.width = "40%";
 
     cardArray.forEach((card) => {
       if (!card.classList.contains("clicked-card")) {
