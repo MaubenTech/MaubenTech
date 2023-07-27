@@ -308,8 +308,21 @@ body {
   display: flex;
 }
 
-.service-form .title h2 {
-  color: "";
+.service-form .title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.service-form .title span {
+  color: #cab07f;
+  font-family: monospace;
+  font-size: 1.8rem;
+}
+
+.service-form .title p {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #fff;
 }
 
 .service-form input,
@@ -325,7 +338,7 @@ body {
 }
 
 .service-form input:hover,
-.servie-form textarea:hover {
+.service-form textarea:hover {
   border-color: #d0b07f;
 }
 
@@ -347,6 +360,10 @@ body {
   margin-bottom: 100%;
   text-align: center;
   color: aliceblue;
+}
+
+.card.clicked-card .card-text p {
+  font-size: 1rem;
 }
 
 .text {
