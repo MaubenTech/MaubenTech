@@ -236,7 +236,7 @@ body {
   user-select: none;
 }
 
-#expanding-card {
+#expanding-card, .card {
   position: absolute;
   left: 0;
   display: flex;
@@ -396,25 +396,9 @@ body {
 
 .card {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 22%;
-  height: 100%;
-  padding: 10px;
-  background: linear-gradient(
-    184deg,
-    rgba(122, 122, 132, 1) 17%,
-    rgba(110, 111, 121, 1) 50%,
-    rgba(88, 89, 99, 1) 65%,
-    rgba(71, 74, 84, 1) 76%
-  );
   /* padding-top: 8%; */
-  border: 1px solid #d0b07f;
-  border-radius: 25px;
   opacity: 1;
   transition: opacity 0.2s ease-in-out;
-  overflow: hidden;
 }
 
 .card:hover {
