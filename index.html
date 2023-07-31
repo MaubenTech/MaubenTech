@@ -40,8 +40,8 @@
     </div>
   </header>
 
-  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-  <div class="elfsight-app-f8d93017-bd80-4c96-a104-2ff8a9bcf398"></div>
+  <!-- <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+  <div class="elfsight-app-f8d93017-bd80-4c96-a104-2ff8a9bcf398"></div> -->
   <hr>
   <br/>
   <main>
@@ -52,17 +52,41 @@
         <p id="service-bio-cont">made with passion</p>
       </div>
       <div class="card-container">
+        <div id="expanding-card">
+          <div class="btn">
+              <i class="fa-solid fa-circle-chevron-left"></i>
+          </div>
+          <div class="form-details">
+            <img id="expanding-card-image" src="">
+            <div class="card-text">
+              <h1 class="text" id="expanding-text-header"></h1>
+              <p id="expanding-text-content"></p>
+            </div>
+          </div>
+          <form class="service-form">
+            <div class="title">
+              <span>Interested?</span>
+              <p>Send us a message today!</p>
+            </div>
+            <input type="text" name="" id="" placeholder="Name">
+            <input type="text" name="" id="" placeholder="Email">
+            <input type="text" name="" id="" placeholder="Phone Number">
+            <textarea name="" id="expanding-form-textarea" cols="30" rows="10" placeholder=""></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+
+
         <div class="card">
           <div class="btn">
-            <button>
               <i class="fa-solid fa-circle-chevron-right"></i>
-            </button>
           </div>
           <div class="form-details">
             <img src="resources/images/Property 1=Default.png">
             <div class="card-text">
               <h1 class="text">App Development</h1>
-              <p>We can build native or cross-platform apps for iOS, Android, or<span class="ellipsis">...</span> <span class="expanded-content"> Windows devices. We use the latest technologies and frameworks to ensure your app is fast, secure and user-friendly.</span> </p>
+              <p>We can build native or cross-platform apps for iOS, Android, or... </p>
+              <span>We can build native or cross-platform apps for iOS, Android, or Windows devices. We use the latest technologies and frameworks to ensure your app is fast, secure and user-friendly.</span>
             </div>
           </div>
           <form class="service-form">
@@ -86,8 +110,20 @@
             <div class="card-text">
               <h1 class="text">Graphic Design</h1>
               <p>We can create stunning and original graphic designs for...</p>
+              <span>We can create stunning and original graphic designs for your logo, branding, marketing materials, social media posts, and more. We use the latest tools and software to ensure your designs are high-resolution and print-ready.</span>
             </div>
           </div>
+          <form class="service-form">
+            <div class="title">
+              <span>Interested?</span>
+              <p>Send us a message today!</p>
+            </div>
+            <input type="text" name="" id="" placeholder="Name">
+            <input type="text" name="" id="" placeholder="Email">
+            <input type="text" name="" id="" placeholder="Phone Number">
+            <textarea name="" id="" cols="30" rows="10" placeholder=""></textarea>
+            <button type="submit">Send</button>
+          </form>
         </div>
         <div class="card">
           <div class="btn">
@@ -98,8 +134,20 @@
             <div class="card-text">
               <h1 class="text">Web Design</h1>
               <p>We can design beautiful and responsive websites...</p>
+              <span>We can design beautiful and responsive websites that showcase your brand and engage your visitors. We follow the best practices of web design and usability to ensure your website is easy to navigate and compatible with all browsers and devices.</span>
             </div>
           </div>
+          <form class="service-form">
+            <div class="title">
+              <span>Interested?</span>
+              <p>Send us a message today!</p>
+            </div>
+            <input type="text" name="" id="" placeholder="Name">
+            <input type="text" name="" id="" placeholder="Email">
+            <input type="text" name="" id="" placeholder="Phone Number">
+            <textarea name="" id="" cols="30" rows="10" placeholder=""></textarea>
+            <button type="submit">Send</button>
+          </form>
         </div>
         <div class="card">
           <div class="btn">
@@ -110,11 +158,25 @@
             <div class="card-text">
               <h1 class="text">Web Development</h1>
               <p>We create custom websites and web applications that...</p>
+              <span>We create custom websites and web applications that help you reach and convert your target audience. We use the best technologies and practices to ensure your web solution is user-friendly, secure and scalable.</span>
             </div>
           </div>
+          <form class="service-form">
+            <div class="title">
+              <span>Interested?</span>
+              <p>Send us a message today!</p>
+            </div>
+            <input type="text" name="" id="" placeholder="Name">
+            <input type="text" name="" id="" placeholder="Email">
+            <input type="text" name="" id="" placeholder="Phone Number">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Hi, I'm interested in your "></textarea>
+            <button type="submit">Send</button>
+          </form>
         </div>
       </div>
     </section>
+<script src="js/index.js"></script>
+
     <hr>
     <section>
       <div class="language-container">
@@ -232,6 +294,4 @@
     </section>
   </main>
 </body>
-<script src="js/index.js"></script>
-
 </html>
