@@ -128,6 +128,7 @@ for (let i = 0; i < cardArray.length; i++) {
     );
     expandingFormTextarea.value = `Hi, I'm interested in your ${expandingTextHeader.innerHTML.toLowerCase()} services.`;
     expandingFormTextarea.placeholder = "How can we help you?";
+    expandingFormTextarea.style.opacity = 1;
     expandingFormTextarea.onfocus = (event) => event.currentTarget.select();
 
     const form = expandingCard.children[2];
@@ -136,6 +137,7 @@ for (let i = 0; i < cardArray.length; i++) {
     const reverseExpandBtn = expandingCard.children[0];
     reverseExpandBtn.addEventListener("click", (event) => {
       expandingCard.classList.remove("clicked");
+      expandingFormTextarea.style.opacity = 0;
 
       timeout = setTimeout(() => {
         if (!expandingCard.classList.contains("clicked")) {

@@ -232,6 +232,10 @@ body {
   /* background-color: #fff; */
 }
 
+.card-container * {
+  user-select: none;
+}
+
 #expanding-card {
   position: absolute;
   left: 0;
@@ -265,6 +269,21 @@ body {
   opacity: 1;
 }
 
+.btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn i {
+  font-size: 2rem;
+}
+
 #expanding-card.clicked .form-details {
   display: flex;
   flex-direction: column;
@@ -280,6 +299,7 @@ body {
   margin-left: 50%;
   transform: translateX(-50%);
   height: 225px;
+  pointer-events: none;
 }
 
 #expanding-card.clicked img {
@@ -403,37 +423,20 @@ body {
   cursor: pointer;
 }
 
-.card.clicked-card {
+/* .card.clicked-card {
   position: absolute;
-  /* top: 0; */
-  /* left: 0; */
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
   background: #474b55;
   border-width: 2px;
-}
+} */
 
-.card.clicked-card:hover {
+/* .card.clicked-card:hover {
   cursor: default;
-}
+} */
 
-.btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background-color: transparent;
-}
-
-.btn:hover {
-  cursor: pointer;
-}
-
-.btn i {
-  font-size: 2rem;
-}
-
-.card.clicked-card .form-details {
+/* .card.clicked-card .form-details {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -441,13 +444,14 @@ body {
   padding-top: 2%;
   height: 100%;
   width: 50%;
-}
+} */
 
 .card img {
   margin-top: 40%;
   margin-left: 50%;
   transform: translateX(-50%);
   height: 225px;
+  pointer-events: none;
 }
 
 .card-text {
@@ -457,9 +461,9 @@ body {
   color: aliceblue;
 }
 
-.card.clicked-card .card-text {
+/* .card.clicked-card .card-text {
   margin: 2% 0 0;
-}
+} */
 
 .card-text .text {
   padding-bottom: 10%;
@@ -467,9 +471,9 @@ body {
   font-weight: normal;
 }
 
-.card.clicked-card .card-text .text {
+/* .card.clicked-card .card-text .text {
   padding-bottom: 0;
-}
+} */
 
 .card-text p {
   position: relative;
@@ -482,20 +486,20 @@ body {
   line-height: 1.4;
 }
 
-.card.clicked-card .card-text p {
+/* .card.clicked-card .card-text p {
   position: initial;
   margin: 5% auto 0;
   width: 70%;
   font-size: 1rem;
-}
+} */
 
 .card-text span {
   display: none;
 }
 
-.card.card.clicked-card .expanded-content {
+/* .card.card.clicked-card .expanded-content {
   display: initial;
-}
+} */
 
 .language-container {
   width: 100%;
