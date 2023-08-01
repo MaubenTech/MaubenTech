@@ -236,7 +236,8 @@ body {
   user-select: none;
 }
 
-#expanding-card, .card {
+#expanding-card,
+.card {
   position: absolute;
   left: 0;
   display: flex;
@@ -271,9 +272,15 @@ body {
 
 .btn {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  background-color: transparent;
+  top: 5%;
+  right: 8%;
+  border: 2px solid #d0b07f;
+  background-color: #d0b07f;
+  border-radius: 100%;
+}
+
+#expanding-card.clicked .btn {
+  right: 1.76%;
 }
 
 .btn:hover {
@@ -281,7 +288,12 @@ body {
 }
 
 .btn i {
-  font-size: 2rem;
+  color: #7a7a84;
+  font-size: 1.5rem;
+}
+
+#expanding-card.clicked .btn i {
+  color: #474b55;
 }
 
 #expanding-card.clicked .form-details {

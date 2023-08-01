@@ -58,18 +58,28 @@ var cardArray = Array.from(cards);
 
 const mouseover = (card) => {
   card.children[1].children[1].children[1].style.padding = "0 15%";
+  card.children[0].children[0].style.color = "#474b55";
+  card.children[0].children[0].style.display = "none";
   // card.children[1].children[1].children[1].style.padding = "0 5%";
 };
 const mouseleave = (card) => {
   card.children[1].children[1].children[1].style.padding = "0 10%";
+  card.children[0].children[0].style.color = "#7A7A84";
 };
 
 for (let i = 0; i < cardArray.length; i++) {
   const card = cardArray[i];
-  if (!card.classList.contains("clicked-card")) {
-    card.addEventListener("mouseover", mouseover(card));
-    card.addEventListener("mouseleave", mouseleave(card));
-  }
+  card.addEventListener("mouseover", (event) => {
+    const element = event.currentTarget;
+    element.children[1].children[1].children[1].style.padding = "0 15%";
+    element.children[0].children[0].style.color = "#474b55";
+    // card.children[1].children[1].children[1].style.padding = "0 5%";
+  });
+  card.addEventListener("mouseleave", (event) => {
+    const element = event.currentTarget;
+    element.children[1].children[1].children[1].style.padding = "0 10%";
+    element.children[0].children[0].style.color = "#7A7A84";
+  });
 
   // card.addEventListener("click", (event) => {
   //   console.log("card clicked!");
