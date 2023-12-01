@@ -1,253 +1,612 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MaubenTech - Home</title>
+    <link rel="icon" type="image/x-icon" href="/images/mauben-icon-lt.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/home2.css" />
+    <link rel="stylesheet" href="css/home1.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/index.css">
-  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="resources/fontawesome-free-6.4.0-web/css/all.min.css"/>
-  <title>Document</title>
-</head>
+  <body>
+    <div class="mobile-nav">
+      <nav class="container">
+        <div class="inner">
+          <a href="index.html" class="logo">
+            <img src="images/mauben-icon-dt-svg.svg" alt="Company logo" />
+          </a>
+          <ul class="menu">
+            <!-- <li class="menu-item active hover">
+              <a href="index.html" class="menu-link">Home</a>
+              <span class="toggle-menu fa-solid fa-angle-down"></span>
+            </li> -->
 
-<body>
-  <header>
-    <div class="overlay"></div>
-    <nav id="nav">
-      <div class="logo">
-        <div id="logo-img">
-          <img id="logo" src="resources/images/logo.png">
+            <li id="menu-button-link">
+              <a
+                href="contact.html"
+                class="button button-lg button-secondary-alt"
+              >
+                <i class="fa-regular fa-calendar-check"></i>
+                Schedule Consultation
+              </a>
+            </li>
+          </ul>
         </div>
-        <h1>MAUBEN TECH</h1>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="ContactUs.html">Contact Us</a></li>
-      </ul>
-      <div class="burger">
-        <div class="line 1"></div>
-        <div class="line 2"></div>
-        <div class="line 3"></div>
-      </div>
-    </nav>
-    <div class="intro-text">
-      <h1 id="welcome-text">Building The Future With Technology</h1>
-      <p class="sub-text">We are a design and development agency</p>
-      <p class="sub-text">that turn your idea into reality.</p>
+      </nav>
     </div>
-  </header>
-
-  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-  <div class="elfsight-app-f8d93017-bd80-4c96-a104-2ff8a9bcf398"></div>
-  <hr>
-  <br/>
-  <main>
-    <section>
-      <div class="services">
-        <h1 id="service">Our Services</h1>
-        <p id="service-bio">Every design, app and website is</p>
-        <p id="service-bio-cont">made with passion</p>
+    <div class="mobile-navbar container">
+      <div class="inner">
+        <i class="fa-solid fa-bars menu-open"></i>
+        <i class="fa-solid fa-close menu-close"></i>
+        <a href="#" class="logo">
+          <img src="images/images/mauben-icon-lt.svg" alt="" />
+        </a>
       </div>
-      <div class="card-container">
+    </div>
 
-        <div id="expanding-card">
-          <div class="btn">
-              <i class="fa-solid fa-circle-chevron-left"></i>
+    <main>
+      <section class="hero container bg-image bg-gradient">
+        <div class="inner">
+          <div class="content">
+            <header>
+              <span class="heading"> Welcome To Mauben Tech </span>
+              <span class="subheading">
+                Building the future with technology...
+              </span>
+            </header>
+            <a
+              href="contact.html#contact-form"
+              class="button button-lg button-main"
+              >Let's Work Together</a
+            >
           </div>
-          <div class="form-details">
-            <img id="expanding-card-image" src="">
-            <div class="card-text">
-              <h1 class="text" id="expanding-text-header"></h1>
-              <p id="expanding-text-content"></p>
-            </div>
-          </div>
-          <form class="service-form">
-            <div class="title">
-              <span>Interested?</span>
-              <p>Send us a message today!</p>
-            </div>
-            <input type="text" name="" id="" placeholder="Name">
-            <input type="text" name="" id="" placeholder="Email">
-            <input type="text" name="" id="" placeholder="Phone Number">
-            <textarea name="" id="expanding-form-textarea" cols="30" rows="10" placeholder=""></textarea>
-            <button type="submit">Send</button>
-          </form>
+        </div>
+        <div class="bottom-img">
+          <img src="images/bottom_left_grey.png" alt="" />
         </div>
 
-        <div class="card">
-          <div class="btn">
-            <i class="fa-solid fa-circle-chevron-right"></i>
+        <div class="floating-imgs">
+          <div>
+            <img src="images/floating_image_09.png" alt="" />
           </div>
-          <div class="form-details">
-            <img src="resources/images/Property 1=Default.png">
-            <div class="card-text">
-              <h1 class="text">App Development</h1>
-              <p>We can build native or cross-platform apps for iOS, Android, or... </p>
-              <span>We can build native or cross-platform apps for iOS, Android, or Windows devices. We use the latest technologies and frameworks to ensure your app is fast, secure and user-friendly.</span>
-            </div>
+          <div>
+            <img src="images/floating_image_11.png" alt="" />
+          </div>
+          <div>
+            <img src="images/floating_image_10.png" alt="" />
           </div>
         </div>
-        <div class="card">
-          <div class="btn">
-            <i class="fa-solid fa-circle-chevron-right"></i>
-          </div>
-          <div class="form-details">
-            <img src="resources/images/Design Process-bro (2) 1.png">
-            <div class="card-text">
-              <h1 class="text">Graphic Design</h1>
-              <p>We can create stunning and original graphic designs for...</p>
-              <span>We can create stunning and original graphic designs for your logo, branding, marketing materials, social media posts, and more. We use the latest tools and software to ensure your designs are high-resolution and print-ready.</span>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="btn">
-            <i class="fa-solid fa-circle-chevron-right"></i>
-          </div>
-          <div class="form-details">
-            <img src="resources/images/Content structure-bro (1) 1.png">
-            <div class="card-text">
-              <h1 class="text">Web Design</h1>
-              <p>We can design beautiful and responsive websites...</p>
-              <span>We can design beautiful and responsive websites that showcase your brand and engage your visitors. We follow the best practices of web design and usability to ensure your website is easy to navigate and compatible with all browsers and devices.</span>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="btn">
-            <i class="fa-solid fa-circle-chevron-right"></i>
-          </div>
-          <div class="form-details">
-            <img src="resources/images/Open source-bro 1.png">
-            <div class="card-text">
-              <h1 class="text">Web Development</h1>
-              <p>We create custom websites and web applications that...</p>
-              <span>We create custom websites and web applications that help you reach and convert your target audience. We use the best technologies and practices to ensure your web solution is user-friendly, secure and scalable.</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-<script src="js/index.js"></script>
+      </section>
 
-    <hr>
-    <section>
-      <div class="language-container">
-        <div class="language">
-          <p class="mainLanguage-text">Skilled in these <span>language</span> and programs we produce pure value</p>
-        </div>
-        <div class="language lang-img">
-          <img src="resources/images/Photoshop.png" width="150">
-          <div class="language-text">
-            <h4>Photoshop</h4>
+      <section class="services container">
+        <div class="inner">
+          <div class="text-content">
+            <header>
+              <span class="heading">
+                Crafting Your Digital Universe:
+                <span class="colored">Apps, Sites, Future Delight!</span>
+              </span>
+              <span class="subheading">
+                Empowering Your Vision, One Pixel at a Time
+              </span>
+            </header>
+            <a href="#" class="button button-secondary">Our Services</a>
           </div>
-        </div>
-        <div class="language lang-img">
-          <img src="resources/images/canva.png" width="90">
-          <div class="language-text">
-            <h4>canvas</h4>
-          </div>
-        </div>
-      </div>
-      <div class="programs-container">
-        <div class="program program-img">
-          <img src="resources/images/html5.png" width="90">
-          <div class="language-text">
-            <h4>HTMl5</h4>
-          </div>
-        </div>
-        <div class="program program-img">
-          <img src="resources/images/css3.png" width="90">
-          <div class="language-text">
-            <h4>CSS3</h4>
-          </div>
-        </div>
-        <div class="language program-img">
-          <img src="resources/images/flutter.png" width="90">
-          <div class="language-text">
-            <h4>Flutter</h4>
-          </div>
-        </div>
-        <div class="program program-img">
-          <img src="resources/images/Node.png" width="100">
-          <div class="language-text">
-            <h4>Node.js</h4>
-          </div>
-        </div>
-      </div>
-      <div class="programs-container">
-        <div class="program program-img">
-          <img src="resources/images/java.png" width="200">
-          <div class="language-text">
-            <h4>Java</h4>
-          </div>
-        </div>
-        <div class="program program-img">
-          <img src="resources/images/react.png" width="250">
-          <div class="language-text">
-            <h4>React Native</h4>
-          </div>
-        </div>
-        <div class="language program-img">
-          <img src="resources/images/jsp.png" width="190">
-          <div class="language-text">
-            <!-- <h4>Flutter</h4> -->
-          </div>
-        </div>
-        <div class="program program-img">
-          <img src="resources/images/php.png" width="150">
-          <div class="language-text">
-            <!-- <h4>Node.js</h4> -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <hr>
-    <section class="aboutUs">
-      <div class="overlay">
-        <H1 class="about-heading">About Us</H1>
-        <p class="about-p">Mauben is a Technology company that aims to provide innovative
-          technical solutions to companies in various industries. Our primary
-          focus is to provide software solutions that helps businesses streamline
-          their operations and increase efficiency. With an experienced team of
-          developers and engineers, we aspire to be the leading provider of technical
-          solutions in the market
-        </p>
-      </div>
 
-    </section>
-    <hr>
-    <section class="letsTalk">
-      <div class="Lets-Talk">
-        <div class="talk">
-          <p class="Talk">Let Us help you urn your Ideaa into reality.</p>
-          <p class="lets">Send us an email, call or chat with us on Whatsapp.</p>
-        </div>
-        <div class="talk">
-          <img src="resources/images/mu.png">
-        </div>
-      </div>
-      <div class="lets-talk-button">
-        <button class="button" type="button">Let's Talk</button>
-      </div>
-    </section>
-    <hr>
-    <section>
-      <div class="footer">
-        <div class="footer-image">
-          <img src="resources/images/logo.png" width="130">
-        </div>
-        <div class="footer-links">
-          <a href="#">Services</a>
-          <a href="#">Contact Us</a>
-        </div>
-      </div>
+          <div class="card">
+            <div class="img-container">
+              <!-- <a href="#"><img src="images/home2-icon1.svg" alt=""></a> -->
+              <a href="#"
+                ><img src="images/js-iconn.png" alt="" class="js-icon"
+              /></a>
+            </div>
+            <div class="text-container">
+              <a href="#">
+                <span class="title title-text">JavaScript</span>
+                <!-- <span class="read-more">
+                  Read More
+                  <span class="icon"
+                    ><i class="fa-solid fa-angle-right"></i
+                  ></span>
+                </span> -->
+              </a>
+            </div>
+          </div>
 
-      </div>
-    </section>
-  </main>
-</body>
+          <div class="card">
+            <div class="img-container">
+              <!-- <a href="#"><img src="images/home2-icon2.svg" alt=""></a> -->
+              <a href="#"><img src="images/html5-icon.png" alt="" /></a>
+            </div>
+            <div class="text-container">
+              <a href="#">
+                <span class="title title-text">HTML5</span>
+                <!-- <span class="read-more">
+                  Read More
+                  <span class="icon"
+                    ><i class="fa-solid fa-angle-right"></i
+                  ></span>
+                </span> -->
+              </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img-container">
+              <!-- <a href="#"><img src="images/home2-icon3.svg" alt=""></a> -->
+              <a href="#"><img src="images/css3-icon.png" alt="" /></a>
+            </div>
+            <div class="text-container">
+              <a href="#">
+                <span class="title title-text">CSS3</span>
+                <!-- <span class="read-more">
+                  Read More
+                  <span class="icon"
+                    ><i class="fa-solid fa-angle-right"></i
+                  ></span>
+                </span> -->
+              </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img-container">
+              <a href="#"
+                ><img src="images/react-native-icon.png" alt="" class="rn-icon"
+              /></a>
+            </div>
+            <div class="text-container">
+              <a href="#">
+                <span class="title title-text">React Native</span>
+                <!-- <span class="read-more">
+                  Read More
+                  <span class="icon"
+                    ><i class="fa-solid fa-angle-right"></i
+                  ></span>
+                </span> -->
+              </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img-container">
+              <a href="#"><img src="images/php-icon.png" alt="" /></a>
+            </div>
+            <div class="text-container">
+              <a href="#">
+                <span class="title title-text">PHP</span>
+                <!-- <span class="read-more">
+                  Read More
+                  <span class="icon"
+                    ><i class="fa-solid fa-angle-right"></i
+                  ></span>
+                </span> -->
+              </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img-container">
+              <a href="#"><img src="images/java.png" alt="" /></a>
+            </div>
+            <div class="text-container">
+              <a href="#">
+                <span class="title title-text">JAVA</span>
+                <!-- <span class="read-more">
+                  Read More
+                  <span class="icon"
+                    ><i class="fa-solid fa-angle-right"></i
+                  ></span>
+                </span> -->
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="top-img">
+          <img src="images/top_right_black.png" alt="" />
+        </div>
+        <div class="bottom-img">
+          <img src="images/bottom_left_dark.png" alt="" />
+        </div>
+      </section>
+
+      <section class="meet-experts container bg-image bg-gradient2">
+        <div class="inner">
+          <div class="top">
+            <div class="text-container">
+              <header>
+                <span class="heading">
+                  Unlocking value with
+                  <span class="colored">our knowledge</span>
+                </span>
+                <span class="subheading">
+                  We bring the breathe of our experience and industry knowledge
+                  to help you succeed.
+                </span>
+              </header>
+              <a href="#team-container" class="button button-secondary-alt"
+                >Meet Our Experts</a
+              >
+            </div>
+            <div class="img-container zoom-img-effect">
+              <img src="images/background_video_01-1536x1018.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="top-img">
+          <img src="images/top_right_grey.png" alt="" />
+        </div>
+        <div class="bottom-img">
+          <img src="images/bottom_right_grey.png" alt="" />
+        </div>
+      </section>
+
+      <section class="testimonial container">
+        <div class="inner">
+          <section class="col1">
+            <div class="img-container">
+              <!-- <img src="images/team_01.png" alt=""> -->
+              <img src="images/team_01.png" alt="" />
+            </div>
+          </section>
+
+          <section class="col2">
+            <div class="client-review">
+              <blockquote>
+                "We help our clients revolutionize their business operations,
+                leveraging cutting-edge tech solutions to foster agility and
+                resilience in their organizations."
+              </blockquote>
+              <span class="name"> Benedict Onyechere </span>
+              <span class="position"> CEO </span>
+            </div>
+            <hr />
+            <p class="text">
+              We at Mauben are more than just tech experts — we're your
+              collaborative partners in crafting digital solutions. With a
+              diverse network of industry professionals, we dive deep into
+              understanding your needs, driven by a quest to innovate. Together,
+              we'll build apps and websites that streamline your operations,
+              making your business journey smoother and more efficient.
+            </p>
+            <ul>
+              <li>Custom Web Development & Design</li>
+              <li>Bespoke App Creation & Deployment</li>
+              <li>Digital Product Strategy & Development</li>
+              <li>UI/UX Design & Optimization</li>
+              <li>FullStack Development Solutions</li>
+            </ul>
+          </section>
+        </div>
+        <div class="top-img">
+          <img src="images/top_left_dark.png" alt="" />
+        </div>
+        <div class="bottom-img">
+          <img src="images/bottom_right_dark.png" alt="" />
+        </div>
+      </section>
+
+      <section class="features container bg-gradient2 bg-image">
+        <div class="inner">
+          <div class="col1">
+            <div class="card">
+              <div class="img-container">
+                <i class="fa-regular fa-lightbulb"></i>
+              </div>
+              <div class="text-container">
+                <span class="title">
+                  <span class="colored">Product</span> Ideation
+                </span>
+                <span class="text">
+                  Our expert staff is well experienced, trained and IT industry
+                  certified.
+                </span>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="img-container">
+                <i class="fa-solid fa-filter"></i>
+              </div>
+              <div class="text-container">
+                <span class="title">
+                  <span class="colored">System</span> Design
+                </span>
+                <span class="text">
+                  Our CoE leads work directly with customers in this large and
+                  first phase.
+                </span>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="img-container">
+                <i class="fa-solid fa-cloud"></i>
+              </div>
+              <div class="text-container">
+                <span class="title">
+                  <span class="colored">Technology</span> Services
+                </span>
+                <span class="text">
+                  Award winning Technology Services to fit and scale with any
+                  size of your business.
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col2">
+            <div class="img-container">
+              <img src="images/tc_scheme2.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="top-img">
+          <img src="images/top_left_grey.png" alt="" />
+        </div>
+        <div class="bottom-img">
+          <img src="images/bottom_left_grey.png" alt="" />
+        </div>
+      </section>
+      <section class="team container" id="team-container">
+        <div class="inner centered">
+          <header>
+            <h2 class="heading">Our Team</h2>
+            <p class="subheading">
+              We explore some of the latest trends and strategies
+            </p>
+          </header>
+
+          <section class="team-members">
+            <div class="team-member-card zoom-img-effect">
+              <div class="img-container">
+                <a href="#"><img src="images/ceo.JPG" alt="" /></a>
+              </div>
+              <div class="text-container">
+                <span class="position">C.E.O</span>
+                <a href="#" class="name title-text"> Onyechere Benedict </a>
+                <hr />
+                <div class="contact">
+                  <span class="phone">
+                    <i class="fa-solid fa-phone icon"></i>
+                    +2348064520518
+                  </span>
+                  <span class="email">
+                    <i class="fa-regular fa-envelope"></i>
+                    onyecherebenedict@gmail.com
+                  </span>
+                </div>
+                <div class="bottom">
+                  <span class="socials">
+                    <a href="https://twitter.com/onyechere_ben"
+                      ><i class="fa-brands fa-twitter icon"></i
+                    ></a>
+                    <a href="https://www.instagram.com/onyechere_benedict/"
+                      ><i class="fa-brands fa-instagram icon"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/benedict-onyechere-73b948264/"
+                      ><i class="fa-brands fa-linkedin-in icon"></i
+                    ></a>
+                  </span>
+                  <!-- <a href="#" class="read-more">
+                    <span>Full Profile</span>
+                    <span class="icon">
+                      <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                  </a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="team-member-card zoom-img-effect anijim">
+              <div class="img-container">
+                <a href="#">
+                  <img src="images/cofounder.JPG" alt="" class="anijim" />
+                </a>
+              </div>
+              <div class="text-container">
+                <span class="position">Co-Founder</span>
+                <a href="#" class="name title-text"> Anijim Maurice James </a>
+                <hr />
+                <div class="contact">
+                  <span class="phone">
+                    <i class="fa-solid fa-phone icon"></i>
+                    +2349011559944
+                  </span>
+                  <span class="email">
+                    <i class="fa-regular fa-envelope"></i>
+                    anijimjamesmaurice@gmail.com
+                  </span>
+                </div>
+                <div class="bottom">
+                  <span class="socials">
+                    <a href="https://twitter.com/MauriceAnijim"
+                      ><i class="fa-brands fa-twitter icon"></i
+                    ></a>
+                    <a href="https://www.instagram.com/maurice_anijim"
+                      ><i class="fa-brands fa-instagram icon"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/anijim-james-maurice-3755391bb/"
+                      ><i class="fa-brands fa-linkedin-in icon"></i
+                    ></a>
+                  </span>
+                  <!-- <a href="#" class="read-more">
+                    <span>Full Profile</span>
+                    <span class="icon">
+                      <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                  </a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="team-member-card zoom-img-effect">
+              <div class="img-container">
+                <a href="#"><img src="images/coo.JPG" alt="" /></a>
+              </div>
+              <div class="text-container">
+                <span class="position">C.O.O</span>
+                <a href="#" class="name title-text"> Noah Barizomdu Vikoo </a>
+                <hr />
+                <div class="contact">
+                  <span class="phone">
+                    <i class="fa-solid fa-phone icon"></i>
+                    +2349094873243
+                  </span>
+                  <span class="email">
+                    <i class="fa-regular fa-envelope"></i>
+                    noahvikoo3@gmail.com
+                  </span>
+                </div>
+                <div class="bottom">
+                  <span class="socials">
+                    <a href="#"><i class="fa-brands fa-twitter icon"></i></a>
+                    <a href="https://www.instagram.com/i_am_gwae"
+                      ><i class="fa-brands fa-instagram icon"></i
+                    ></a>
+                    <a href="https://www.linkedin.com/in/noah-vikoo-b404011bb/"
+                      ><i class="fa-brands fa-linkedin-in icon"></i
+                    ></a>
+                  </span>
+                  <!-- <a href="#" class="read-more">
+                    <span>Full Profile</span>
+                    <span class="icon">
+                      <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                  </a> -->
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="bottom-img">
+          <img src="images/Wave_grey_bottom_left_shape_01.png" alt="" />
+        </div>
+      </section>
+
+      <footer class="links">
+        <div class="inner">
+          <div class="quick-links">
+            <div class="col contact">
+              <a href="#" class="logo">
+                <img src="images/mauben-icon-lt.svg" alt="" />
+              </a>
+              <a href="tel:+2348064520518" class="phone">
+                <i class="fa-solid fa-phone-volume"></i>
+                +2348064520518
+              </a>
+              <a href="mailto:info@mauben.com" class="email">
+                <i class="fa-solid fa-envelope"></i>
+                info@mauben.com
+              </a>
+              <!-- <a href="#" class="address">
+                            <i class="fa-solid fa-location-dot"></i>
+                            310 West 14th North Street, NY
+                        </a> -->
+            </div>
+
+            <div class="col links">
+              <h3 class="title-text">Services</h3>
+              <div>
+                <a href="#">Custom Web Development & Design</a>
+                <a href="#">Bespoke App Creation & Development</a>
+                <a href="#">Digital Product Strategy & Development</a>
+                <a href="#">UI/UX Design & Optimization</a>
+                <a href="#">Full-stack Development Solutions</a>
+              </div>
+            </div>
+
+            <div class="col connect">
+              <h3 class="title-text">Connect</h3>
+              <div class="socials">
+                <a href="https://twitter.com/maubentech"
+                  ><i class="fa-brands fa-twitter icon"></i
+                ></a>
+                <a href="https://www.instagram.com/maubentech/"
+                  ><i class="fa-brands fa-instagram icon"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/mauben-tech-816750264/"
+                  ><i class="fa-brands fa-linkedin-in icon"></i
+                ></a>
+              </div>
+              <p>
+                At Mauben, we harness extensive expertise, global insight, and
+                unwavering dedication to navigate clients through emerging
+                landscapes, empowering them to thrive in dynamic and
+                transformative environments in their various business."
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <footer class="legal">
+        <div class="inner">
+          <span> ©2023 MAUBEN. All rights reserved </span>
+          <div>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/script.js"></script>
+    <script>
+      $(function () {
+        // STICKY NAVBAR
+
+        window.onscroll = function () {
+          const mediaQuery = window.matchMedia("(max-width: 1199px)");
+
+          if (!mediaQuery.matches) {
+            if (
+              document.body.scrollTop >= 100 ||
+              document.documentElement.scrollTop >= 100
+            ) {
+              $("nav").css("top", "-80px");
+            } else {
+              $("nav").css("top", "0px");
+            }
+
+            if (
+              document.body.scrollTop >= 400 ||
+              document.documentElement.scrollTop >= 400
+            ) {
+              $("nav .logo img").attr("src", "images/mauben-icon-lt.svg");
+              $("nav").addClass("sticky");
+              $("nav .button").removeClass("button-secondary-alt");
+              $("nav .button").addClass("button-main");
+            } else {
+              $("nav .logo img").attr("src", "images/mauben-icon-dt-svg.svg");
+              $("nav").removeClass("sticky");
+              $("nav .button").addClass("button-secondary-alt");
+              $("nav .button").removeClass("button-main");
+            }
+          }
+        };
+      });
+    </script>
+  </body>
 </html>

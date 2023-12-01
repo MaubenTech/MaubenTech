@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MaubenTech - Contact</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles2.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body>
+    <div class="mobile-nav">
+      <section class="top-bar container">
+        <div class="inner">
+          <div class="left">
+            <span class="address">
+              <i class="fa-solid fa-location-dot icon"></i>
+              310 West 14th North Street, NY
+            </span>
+            <span class="phone">
+              <i class="fa-solid fa-phone-volume icon"></i>
+              +2348064520518
+            </span>
+          </div>
+          <div class="right">
+            <span class="socials">
+              <a href="https://twitter.com/maubentech"
+                ><i class="fa-brands fa-twitter icon"></i
+              ></a>
+              <a href="https://www.instagram.com/maubentech/"
+                ><i class="fa-brands fa-instagram icon"></i
+              ></a>
+            </span>
+            <span class="contact-btn">
+              <a href="#" class="button button-main">Let's Get Together</a>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <nav class="container">
+        <div class="inner">
+          <a href="index.html" class="logo">
+            <img src="images/mauben-icon-dt-svg.svg" alt="Company logo" />
+          </a>
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="index.html" class="menu-link">Home</a>
+            </li>
+            <li id="menu-button-link">
+              <a
+                href="contact.html"
+                class="button button-lg button-secondary-alt"
+              >
+                <i class="fa-regular fa-calendar-check"></i>
+                Schedule Consultation
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="mobile-navbar container">
+      <div class="inner">
+        <i class="fa-solid fa-bars menu-open"></i>
+        <i class="fa-solid fa-close menu-close"></i>
+        <a href="#" class="logo">
+          <img src="images/images/mauben-icon-lt.svg" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <main>
+      <section class="hero container bg-gradient">
+        <div class="inner">
+          <header>
+            <h2 class="heading">Contact</h2>
+            <p class="subheading">
+              Together we can create something all inspirational you need to
+              build.
+            </p>
+          </header>
+        </div>
+        <div class="bottom-img">
+          <img src="images/Wave_White_bottom_right_shape_03.png" alt="" />
+        </div>
+      </section>
+
+      <section class="contact container" id="contact-container">
+        <div class="inner">
+          <div class="top">
+            <section class="contact-details">
+              <header>
+                <h3 class="big-heading">HOW CAN WE HELP YOU OUT?</h3>
+              </header>
+              <span class="phone title-text"> +2348064520518 </span>
+
+              <div class="socials">
+                <h3 class="title-text">Social Media</h3>
+                <div class="icons">
+                  <!-- <a href="#" class="button button-main button-lg">
+									<i class="fa-brands fa-facebook-f icon"></i>
+								</a> -->
+                  <a
+                    href="https://twitter.com/maubentech"
+                    class="button button-main button-lg"
+                  >
+                    <i class="fa-brands fa-twitter icon"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/maubentech"
+                    class="button button-main button-lg"
+                  >
+                    <i class="fa-brands fa-instagram icon"></i>
+                  </a>
+                  <!-- <a href="#" class="button button-main button-lg">
+									<i class="fa-brands fa-linkedin-in icon"></i>
+								</a> -->
+                </div>
+              </div>
+            </section>
+
+            <section class="contact-form" id="contact-form">
+              <header>
+                <h2 class="small-heading">CONTACT US</h2>
+                <h3 class="big-heading">
+                  Leave us a little info, and we'll be in touch.
+                </h3>
+              </header>
+              <form onsubmit="sendEmail(); reset();  return false; ">
+                <div class="form-field">
+                  <label for="name">Name (required)</label>
+                  <input type="text" id="name" placeholder="Your name" />
+                  <!-- <span class="validation-message"></span> -->
+                </div>
+                <div class="form-field">
+                  <label for="email">Email (required)</label>
+                  <input type="email" id="email" placeholder="Your email" />
+                  <span class="validation-message"></span>
+                </div>
+                <div class="form-field">
+                  <label for="subject">Subject (optional)</label>
+                  <input type="text" id="subject" placeholder="Your subject" />
+                  <span class="validation-message"></span>
+                </div>
+                <div class="form-field">
+                  <label for="project-details"
+                    >Project details (required)</label
+                  >
+                  <textarea
+                    id="project-details"
+                    placeholder="Okay, I'm listening..."
+                  ></textarea>
+                  <span class="validation-message"></span>
+                </div>
+                <button type="submit" class="button button-secondary">
+                  Send a message
+                </button>
+              </form>
+            </section>
+          </div>
+
+          <section class="map-container">
+            <div
+              id="my-map-canvas"
+              style="height: 100%; width: 100%; max-width: 100%"
+            >
+              <iframe
+                style="height: 100%; width: 100%; border: 0"
+                frameborder="0"
+                src="https://www.google.com/maps/embed/v1/place?q=NIIT+Port+Harcourt,+Kaduna+Street,+Port+Harcourt,+Nigeria&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+              >
+              </iframe>
+            </div>
+          </section>
+        </div>
+
+        <div class="bottom-img" style="margin-top: 10px">
+          <img src="images/Wave_grey_bottom_left_shape_01.png" alt="" />
+        </div>
+      </section>
+
+      <footer class="links">
+        <div class="inner">
+          <div class="top title-text">
+            <h2>Subscribe to our Newsletter</h2>
+            <form action="">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Your email"
+                  class="title-text"
+                />
+                <button class="tit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="quick-links">
+            <div class="col contact">
+              <a href="#" class="logo">
+                <img src="images/mauben-icon-lt.svg" alt="" />
+              </a>
+              <a href="tel:+2348064520518" class="phone">
+                <i class="fa-solid fa-phone-volume"></i>
+                +2348064520518
+              </a>
+              <a href="mailto:info@mauben.com" class="email">
+                <i class="fa-solid fa-envelope"></i>
+                info@mauben.com
+              </a>
+            </div>
+
+            <div class="col links">
+              <h3 class="title-text">Services</h3>
+              <div>
+                <a href="#">Custom Web Development & Design</a>
+                <a href="#">Bespoke App Creation & Development</a>
+                <a href="#">Digital Product Strategy & Development</a>
+                <a href="#">UI/UX Design & Optimization</a>
+                <a href="#">Full-stack Development Solutions</a>
+              </div>
+            </div>
+
+            <div class="col connect">
+              <h3 class="title-text">Connect</h3>
+              <div class="socials">
+                <a href="https://twitter.com/maubentech"
+                  ><i class="fa-brands fa-twitter icon"></i
+                ></a>
+                <a href="https://www.instagram.com/maubentech"
+                  ><i class="fa-brands fa-instagram icon"></i
+                ></a>
+              </div>
+              <p>
+                At Mauben, we harness extensive expertise, global insight, and
+                unwavering dedication to navigate clients through emerging
+                landscapes, empowering them to thrive in dynamic and
+                transformative environments in their various business."
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <footer class="legal">
+        <div class="inner">
+          <span> ©2023 MAUBEN. All rights reserved </span>
+          <div>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <section class="search-bar container">
+      <div class="inner">
+        <span class="close-btn">
+          <span class="icon">&times;</span>
+        </span>
+
+        <form action="">
+          <div>
+            <input type="text" id="search-input" placeholder="Looking for..." />
+            <button>
+              <i class="fa-solid fa-search"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/script.js"></script>
+    <script src="js/sticky-nav.js"></script>
+    <script>
+      $(function () {
+        // STICKY NAVBAR
+
+        window.onscroll = function () {
+          const mediaQuery = window.matchMedia("(max-width: 1199px)");
+
+          if (!mediaQuery.matches) {
+            if (
+              document.body.scrollTop >= 100 ||
+              document.documentElement.scrollTop >= 100
+            ) {
+              $("nav").css("top", "-80px");
+              $("top-bar").css("top", "-100px");
+            } else {
+              $("nav").css("top", "60px");
+              $("top-bar").css("top", "0px");
+            }
+
+            if (
+              document.body.scrollTop >= 400 ||
+              document.documentElement.scrollTop >= 400
+            ) {
+              $("nav .logo img").attr("src", "images/mauben-icon-lt.svg");
+              $("nav").addClass("sticky");
+              $("nav .button").removeClass("button-secondary-alt");
+              $("nav .button").addClass("button-main");
+            } else {
+              $("nav .logo img").attr("src", "images/mauben-icon-dt-svg.svg");
+              $("nav").removeClass("sticky");
+              $("nav .button").addClass("button-secondary-alt");
+              $("nav .button").removeClass("button-main");
+            }
+          }
+        };
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        var subject = document.getElementById("subject").value;
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var messageDetails = document.getElementById("project-details").value;
+
+        var message = `
+                      Subject: ${subject}
+                      <br>
+                      Name: ${name}
+                      <br>
+                      Email: ${email}
+                      <br>
+                      Project Details: ${messageDetails}
+                    `;
+        Email.send({
+          Host: "smtp.elasticemail.com",
+          Username: "info@mauben.com",
+          Password: "77B880E603E13CA5F337E519783E258C6C28",
+          // Password: "77B880E603E13CA5F337E519783E258C6C28",
+          To: "info@mauben.com",
+          From: "info@mauben.com",
+          Subject: "Subject",
+          Body: message,
+        }).then((message) => {
+          if (message === "OK") {
+            Swal.fire({
+              title: "Email Sent successfully",
+              text: "We will get back to you shortly.",
+              icon: "success",
+            });
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

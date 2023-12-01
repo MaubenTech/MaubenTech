@@ -1,0 +1,164 @@
+section.hero{
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 143vh;
+	position: relative;
+	padding-top: 8em;
+	padding-bottom: 8em;
+	position: relative;
+}
+section.hero .inner{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+section.hero header{
+	width: 50%;
+	color: #fff;
+	margin-top: 8em;
+}
+section.hero header .heading{	
+	color: inherit;
+	font-size: 6.25rem;
+}
+section.hero header .subheading{	
+	color: inherit;
+	font-size: 1.625rem;
+	line-height: 2.2rem;
+}
+
+
+/* CENTERED SESSION CONTENT */
+
+.inner.centered header{
+	width: 80%;
+}
+
+
+/* TWO COLUMN SECTIONS *********************** */
+
+section.two-cols .inner{
+	display: flex;
+	flex-wrap: wrap;
+}
+section.two-cols .inner > *{
+	width: 50%;
+}
+section.two-cols .col2{
+	padding: 0 30px;
+}
+
+
+
+/* SERVICES CARD STYLES ********************** */
+
+.services-alt .col:first-of-type{
+	padding-top: 0 !important;
+}
+.services-alt .service-card{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	box-shadow: none;
+	border: 1px solid rgba(0,0,0,.1);
+	transition: all .2s;
+}
+.services-alt .service-card:hover{
+	box-shadow: 0 0 15px rgba(0,0,0,.1);
+}
+.services-alt .service-card > *{
+	margin: 0 auto;
+	text-align: center;
+}
+.services-alt .service-card .img-container{
+	width: 40%;
+}
+
+
+/* RECRUITMENT PROCESS STYLES ************************ */
+
+section.recruitment-process{
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+}
+section.recruitment-process header{
+	width: 50%;
+	z-index: 30;
+}
+
+
+/* MOBILE STYLES ************************** */
+
+@media screen and (max-width: 1199px) {
+
+	section.hero{
+		height: 95vh;
+	}
+	section.hero header .heading{	
+		font-size: 4rem;
+	}
+	section.hero header .subheading{	
+		font-size: 1.5rem;
+		line-height: 1.4;
+	}
+}
+@media screen and (max-width: 992px) {
+	
+	section.hero{
+		padding-top: 3em;
+		padding-bottom: 3em;
+	}
+	section.hero .inner{
+		justify-content: center;
+	}
+	section.hero header{
+		margin-top: 0;
+		width: 100%;
+	}
+
+	
+	/* TWO COLUMN CONTAINERS *************** */
+	section.two-cols .inner{
+		flex-wrap: wrap;
+	}
+	section.two-cols .inner > *{
+		width: 100%;
+	}
+	section.two-cols .col1{
+		margin-bottom: 4rem;
+	}
+	section.two-cols .col1 .img-container{
+		display: flex;
+		justify-content: flex-end;
+	}
+	section.two-cols .col1 img{
+		width: 75%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	section.two-cols .col1 img{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	section.hero header .heading{	
+		font-size: 2.7rem;
+	}
+	section.hero header .subheading{	
+		font-size: 1.3rem;
+		line-height: 1.4;
+	}
+
+	section.two-cols .col2{
+		padding: 0 15px;
+	}
+}
+
+@media screen and (orientation: portrait) {	
+	section.hero{
+		height: 50vh;	
+	}
+}
