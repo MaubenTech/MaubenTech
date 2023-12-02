@@ -145,7 +145,12 @@
                 </div>
                 <div class="form-field">
                   <label for="email">Email (required)</label>
-                  <input type="email" id="email" placeholder="Your email" />
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Your email"
+                    spellcheck="false"
+                  />
                   <span class="validation-message"></span>
                 </div>
                 <div class="form-field">
@@ -329,39 +334,89 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
-      function sendEmail() {
-        var subject = document.getElementById("subject").value;
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var messageDetails = document.getElementById("project-details").value;
+      var subjectValue = document.getElementById("subject").value;
+      const subject = document.getElementById("subject");
 
+      var nameValue = document.getElementById("name").value;
+      const name = document.getElementById("name");
+
+      var emailValue = document.getElementById("email").value;
+      const email = document.getElementById("email");
+
+      var messageDetails = document.getElementById("project-details").value;
+      const message = document.getElementById("project-details");
+
+      function validationFunction(element) {
+        var fieldName = element.getAttribute("id");
+        if (element.value === "") {
+          Swal.fire(`Please fill in the ${fieldName} field`);
+        }
+      }
+
+      function validateEmail(element) {
+        if (
+          !element.value.match(
+            /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+          )
+        ) {
+          Swal.fire("Email is not valid");
+        }
+      }
+
+      document.getElementById("name").addEventListener("focusout", () => {
+        validationFunction(name);
+      });
+
+      document.getElementById("email").addEventListener("focusout", () => {
+        validateEmail(email);
+        validationFunction(email);
+      });
+
+      document.getElementById("subject").addEventListener("focusout", () => {
+        validationFunction(subject);
+      });
+
+      document
+        .getElementById("project-details")
+        .addEventListener("focusout", () => {
+          validationFunction(subject);
+        });
+
+      document
+        .getElementById("project-details")
+        .addEventListener("focusout", () => {
+          validationFunction(messageDetails);
+        });
+
+      function sendEmail() {
         var message = `
-                      Subject: ${subject}
+                      Subject: ${subjectValue}
                       <br>
-                      Name: ${name}
+                      Name: ${nameValue}
                       <br>
-                      Email: ${email}
+                      Email: ${emailValue}
                       <br>
                       Project Details: ${messageDetails}
                     `;
-        Email.send({
-          Host: "smtp.elasticemail.com",
-          Username: "info@mauben.com",
-          Password: "77B880E603E13CA5F337E519783E258C6C28",
-          // Password: "77B880E603E13CA5F337E519783E258C6C28",
-          To: "info@mauben.com",
-          From: "info@mauben.com",
-          Subject: "Subject",
-          Body: message,
-        }).then((message) => {
-          if (message === "OK") {
-            Swal.fire({
-              title: "Email Sent successfully",
-              text: "We will get back to you shortly.",
-              icon: "success",
-            });
-          }
-        });
+
+        // Email.send({
+        //   Host: "smtp.elasticemail.com",
+        //   Username: "info@mauben.com",
+        //   Password: "77B880E603E13CA5F337E519783E258C6C28",
+        //   // Password: "77B880E603E13CA5F337E519783E258C6C28",
+        //   To: "info@mauben.com",
+        //   From: "info@mauben.com",
+        //   Subject: "Subject",
+        //   Body: message,
+        // }).then((message) => {
+        //   if (message === "OK") {
+        //     Swal.fire({
+        //       title: "Email Sent successfully",
+        //       text: "We will get back to you shortly.",
+        //       icon: "success",
+        //     });
+        //   }
+        // });
       }
     </script>
   </body>
